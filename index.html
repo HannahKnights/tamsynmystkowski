@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Tamsyn Mystkowski</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.60">
+    </head>
+    <body>
+        <div id="mask">
+            <div id="title">
+                <img src="images/tm_logo.png">
+            </div>
+        </div>
+        <div id="info">
+            <div class ="top">
+                Ceramics,<br>Handcrafted
+            </div>
+            <div class ="bottom">
+                07530 870 949<br><br>
+                <a href="mailto:hello@tamsynmystkowski.com">hello@tamsynmystkowski.com</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script>
+
+            $('document').ready(function() {
+
+                $('#title').click(function (event) {
+                    $('#info').show();
+                });
+                $('#info').click(function (event) {
+                    $('#info').hide();
+                });
+                $("#info a").click(function(event) {
+                   event.stopPropagation();
+                })
+
+            });
+
+        </script>
+    </body>
+</html>
